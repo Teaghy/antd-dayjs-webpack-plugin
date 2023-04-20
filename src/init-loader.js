@@ -12,7 +12,7 @@ module.exports = function loader(source) {
   })
   
   // special plugin
-  source += `var antdPlugin = require('antd-dayjs-webpack-plugin/src/antd-plugin');dayjs.extend(antdPlugin);`
+  source += `var antdPlugin = require('@teaghy/antd-dayjs-webpack-plugin/src/antd-plugin');dayjs.extend(antdPlugin);`
   
   return source
 }
